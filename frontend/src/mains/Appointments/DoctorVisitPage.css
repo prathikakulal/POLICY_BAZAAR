@@ -1,0 +1,656 @@
+/* General Styles
+.doctor-visit-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.header h1 {
+  color: #1976d2;
+  margin: 0;
+}
+
+.app-version {
+  color: #6c757d;
+  font-size: 0.9rem;
+}
+
+.breadcrumb {
+  color: #6c757d;
+  font-size: 0.9rem;
+  margin-bottom: 20px;
+}
+
+
+.doctor-profile-section {
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.doctor-info h2 {
+  margin: 0 0 5px 0;
+}
+
+.specialty {
+  color: #666;
+  margin: 0 0 10px 0;
+  font-size: 0.9rem;
+}
+
+.experience {
+  margin: 0 0 5px 0;
+  font-size: 0.9rem;
+}
+
+.location, .clinic {
+  margin: 0 0 5px 0;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.rating {
+  display: inline-block;
+  background-color: #388e3c;
+  color: white;
+  padding: 3px 8px;
+  border-radius: 10px;
+  font-size: 0.8rem;
+  margin-top: 5px;
+}
+
+.consultation-type {
+  display: flex;
+  margin-top: 20px;
+  gap: 10px;
+}
+
+.consultation-type button {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ddd;
+  background-color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.consultation-type button.active {
+  background-color: #1976d2;
+  color: white;
+  border-color: #1976d2;
+}
+
+
+.clinic-info {
+  background-color: white;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.clinic-info h3 {
+  margin: 0 0 10px 0;
+}
+
+.address {
+  color: #666;
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+
+.date-selection {
+  background-color: white;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.date-selection h3 {
+  margin: 0 0 15px 0;
+}
+
+.date-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 10px;
+}
+
+.date-box {
+  text-align: center;
+  padding: 10px 5px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.date-box.selected {
+  background-color: #1976d2;
+  color: white;
+  border-color: #1976d2;
+}
+
+.day {
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.date {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.month {
+  font-size: 0.7rem;
+}
+
+
+.time-selection {
+  background-color: white;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.time-selection h3 {
+  margin: 0 0 15px 0;
+}
+
+.time-slots {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.time-slot {
+  padding: 8px 15px;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.time-slot.selected {
+  background-color: #1976d2;
+  color: white;
+  border-color: #1976d2;
+}
+
+
+.language-selection {
+  background-color: white;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.language-selection h3 {
+  margin: 0 0 15px 0;
+}
+
+.language-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.language-option {
+  padding: 8px 15px;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.language-option.selected {
+  background-color: #1976d2;
+  color: white;
+  border-color: #1976d2;
+}
+
+
+.payment-section {
+  background-color: white;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.fee-display {
+  display: flex;
+  align-items: baseline;
+  margin-bottom: 15px;
+}
+
+.fee-amount {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.fee-label {
+  color: #666;
+}
+
+.payment-options {
+  display: flex;
+  gap: 20px;
+}
+
+.payment-option {
+  display: flex;
+  align-items: center;
+}
+
+.payment-option input {
+  margin-right: 5px;
+}
+
+
+.action-buttons {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.continue-btn {
+  background-color: #1976d2;
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 30px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  width: 100%;
+  max-width: 300px;
+}
+
+
+.footer-info {
+  display: flex;
+  justify-content: space-between;
+  color: #6c757d;
+  font-size: 0.8rem;
+  margin-top: 30px;
+}
+
+
+
+.calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.calendar-header button {
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  padding: 5px 10px;
+}
+
+.calendar-header h4 {
+  margin: 0;
+}
+
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 5px;
+}
+
+.calendar-weekday {
+  text-align: center;
+  font-weight: bold;
+  padding: 5px;
+  font-size: 0.8rem;
+  color: #555;
+}
+
+.calendar-day {
+  text-align: center;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: all 0.2s;
+}
+
+.calendar-day:hover:not(.empty) {
+  background-color: #f0f0f0;
+}
+
+.calendar-day.selected {
+  background-color: #007bff;
+  color: white;
+}
+
+.calendar-day.today {
+  border: 1px solid #007bff;
+}
+
+.calendar-day.empty {
+  background-color: transparent;
+  cursor: default;
+} */
+
+
+
+/* General Container */
+.doctor-visit-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.header h1 {
+  color: #1976d2;
+  margin: 0;
+}
+
+.app-version {
+  color: #6c757d;
+  font-size: 0.9rem;
+}
+
+/* Doctor Profile */
+.doctor-profile-section {
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.doctor-info h2 {
+  margin: 0 0 5px 0;
+}
+
+.specialty {
+  color: #666;
+  margin: 0 0 10px 0;
+  font-size: 0.9rem;
+}
+
+.experience, .location, .clinic {
+  margin: 0 0 5px 0;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.rating {
+  display: inline-block;
+  background-color: #388e3c;
+  color: white;
+  padding: 3px 8px;
+  border-radius: 10px;
+  font-size: 0.8rem;
+  margin-top: 5px;
+}
+
+/* Consultation Type Buttons */
+.consultation-type {
+  display: flex;
+  margin-top: 20px;
+  gap: 10px;
+}
+
+.consultation-type button {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ddd;
+  background-color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.consultation-type button.active {
+  background-color: #1976d2;
+  color: white;
+  border-color: #1976d2;
+}
+
+/* Clinic Info */
+.clinic-info {
+  background-color: white;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.clinic-info h3 {
+  margin: 0 0 10px 0;
+}
+
+.address {
+  color: #666;
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+/* Calendar (Date Selection) */
+.date-selection {
+  background-color: white;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.date-selection h3 {
+  margin-bottom: 15px;
+}
+
+.calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.calendar-header button {
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 8px;
+}
+
+.calendar-weekday {
+  text-align: center;
+  font-weight: bold;
+  font-size: 0.85rem;
+  color: #555;
+}
+
+.calendar-day {
+  text-align: center;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  background-color: #f0f0f0;
+  transition: 0.2s;
+}
+
+.calendar-day.empty {
+  background: transparent;
+  cursor: default;
+}
+
+.calendar-day.today {
+  border: 2px solid #1976d2;
+}
+
+.calendar-day.selected {
+  background-color: #1976d2;
+  color: white;
+}
+
+/* Time Selection */
+.time-selection {
+  background-color: white;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.time-selection h3 {
+  margin-bottom: 15px;
+}
+
+.time-slots {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.time-slot {
+  padding: 8px 15px;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  cursor: pointer;
+  background-color: #fff;
+}
+
+.time-slot.selected {
+  background-color: #1976d2;
+  color: white;
+  border-color: #1976d2;
+}
+
+/* Language Selection */
+.language-selection {
+  background-color: white;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.language-selection h3 {
+  margin-bottom: 15px;
+}
+
+.language-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.language-option {
+  padding: 8px 15px;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  cursor: pointer;
+  background-color: #fff;
+}
+
+.language-option.selected {
+  background-color: #1976d2;
+  color: white;
+  border-color: #1976d2;
+}
+
+/* Payment Section */
+.payment-section {
+  background-color: white;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.fee-display {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.fee-amount {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #1976d2;
+}
+
+.fee-label {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.payment-options {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.payment-option {
+  display: flex;
+  align-items: center;
+}
+
+.payment-option input[type="radio"] {
+  margin-right: 10px;
+}
+
+/* Action Button */
+.action-buttons {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.continue-btn {
+  padding: 12px 25px;
+  background-color: #1976d2;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.continue-btn:hover {
+  background-color: #125aa2;
+}
+
+/* Footer */
+
