@@ -72,6 +72,78 @@
       "artifacts": [
         "Lock"
       ]
+    },
+    "D:\\healthcare_insurance_backupcode\\blockmedi_insurance\\auth-contract\\contracts\\AuthContract.sol": {
+      "lastModificationDate": 1759558610086,
+      "contentHash": "e637b75ccaf55e85b1899b1ce7333b73",
+      "sourceName": "contracts/AuthContract.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "evmVersion": "paris",
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "AuthContract"
+      ]
+    },
+    "D:\\healthcare_insurance_backupcode\\blockmedi_insurance\\auth-contract\\contracts\\Lock.sol": {
+      "lastModificationDate": 1759558610088,
+      "contentHash": "95492a003d4a6703de9ce15c54470ac0",
+      "sourceName": "contracts/Lock.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "evmVersion": "paris",
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "Lock"
+      ]
     }
   }
 }
