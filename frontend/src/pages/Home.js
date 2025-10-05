@@ -81,7 +81,7 @@ const Home = () => {
         <div className="nav-links">
           <span className="nav-item">Insurance Products <span className="checkmark">✔</span></span>
           <span className="nav-item">Renew Your Policy <span className="checkmark">✔</span></span>
-          <span className="nav-item">Claim <span className="checkmark">✔</span></span>
+          <span className="nav-item" onClick={() => navigate('/insurance-claim-portal')}>Claim <span className="checkmark">✔</span></span>
           <span className="nav-item">Support <span className="checkmark">✔</span></span>
           <span className="nav-item" onClick={() => navigate('/dashboard')}>Talk to Expert</span>
           <button className="sign-in-btn" onClick={handleSignInClick}>Sign in</button>
@@ -192,7 +192,7 @@ const Home = () => {
           </div>
         </div>
 
-        <div className="category">
+        <div className="category"  onClick={() => navigate('/cancer-insurance')}>
           <div className="card-box">
             <div className="label">Cancer Insurance</div>
             <div className="icon-container">

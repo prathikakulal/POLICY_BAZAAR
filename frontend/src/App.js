@@ -15,7 +15,8 @@ import DoctorVisitPage from './mains/Appointments/DoctorVisitPage';
 import PersonalAccidentInsuranceForm from './pages/PersonalAccidentInsuranceForm';
 import HealthInsurancePolicyBazaarClone from './pages/HealthInsurancePolicyBazaarClone';
 import OPDClaim from './pages/OPDClaim';
-
+import CancerInsurance from './pages/CancerInsurance';
+import InsuranceClaimPortal from './pages/InsuranceClaimPortal';
 function App() {
   return (
     <Router>
@@ -35,6 +36,8 @@ function App() {
         <Route path="/personal-accident-insurance" element={<PersonalAccidentInsuranceForm />} />
         <Route path="/health-insurance-onec-crore" element={<HealthInsurancePolicyBazaarClone />} />
         <Route path="/opd-claim" element={<OPDClaim/>} />
+        <Route path="/cancer-insurance" element={<CancerInsurance/>} />
+        <Route path="/insurance-claim-portal" element={<InsuranceClaimPortal/>} />
       </Routes>
     </Router>
   );
