@@ -174,7 +174,7 @@ const Home = () => {
           </div>
         </div>
 
-        <div className="category">
+        <div className="category" onClick={() => navigate('/health-insurance-onec-crore')}>
           <div className="card-box">
             <div className="label">1 Cr Health Cover</div>
             <div className="icon-container">

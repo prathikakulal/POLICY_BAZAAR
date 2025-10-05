@@ -21,10 +21,10 @@ const CitySelectionPB = () => {
   return (
     <div className="city-selection-pb-container">
       {/* Progress Bar */}
-      <div className="pb-progress-bar">
+      {/* <div className="pb-progress-bar">
         <div className="pb-progress" style={{ width: '50%' }}></div>
         <span className="pb-progress-text">50% complete</span>
-      </div>
+      </div> */}
 
       {/* Main Content */}
       <div className="pb-main-content">
