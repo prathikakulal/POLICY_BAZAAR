@@ -12,6 +12,7 @@ import SelectCity from './pages/CitySelectionPB';
 import Dashboard from './mains/Dashboard/Dashboard';
 import BookAppointment from './mains/Appointments/BookAppointment';
 import DoctorVisitPage from './mains/Appointments/DoctorVisitPage';
+import PersonalAccidentInsuranceForm from './pages/PersonalAccidentInsuranceForm';
 
 function App() {
   return (
@@ -29,6 +30,8 @@ function App() {
         <Route path="/book" element={<BookAppointment />} />
         <Route path="/doctor/:id" element={<DoctorVisitPage />} />
         <Route path="/doctor/:id/visit" element={<DoctorVisitPage />} />
+        <Route path="/personal-accident-insurance" element={<PersonalAccidentInsuranceForm />} />
+
       </Routes>
     </Router>
   );

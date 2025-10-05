@@ -19,6 +19,7 @@ import Dashboard from '../mains/Dashboard/Dashboard';
 import DoctorVisitPage from '../mains/Appointments/DoctorVisitPage';
 
 
+
 const Home = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [showLogin, setShowLogin] = useState(false);
@@ -155,7 +156,7 @@ const Home = () => {
           </div>
         </div>
 
-        <div className="category">
+        <div className="category"  onClick={() => navigate('/personal-accident-insurance')}>
           <div className="card-box">
             <div className="label">Personal Accident</div>
             <div className="icon-container">
