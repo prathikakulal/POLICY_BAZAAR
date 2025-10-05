@@ -165,7 +165,7 @@ const Home = () => {
           </div>
         </div>
 
-        <div className="category">
+        <div className="category" onClick={() => navigate('/arogya-sanjeevini')}  >
           <div className="card-box">
             <div className="label">Aarogya Sanjeevini</div>
             <div className="icon-container">

@@ -17,6 +17,8 @@ import HealthInsurancePolicyBazaarClone from './pages/HealthInsurancePolicyBazaa
 import OPDClaim from './pages/OPDClaim';
 import CancerInsurance from './pages/CancerInsurance';
 import InsuranceClaimPortal from './pages/InsuranceClaimPortal';
+import ArogyaSanjeevini from './pages/ArogyaSanjeevini';
+
 function App() {
   return (
     <Router>
@@ -38,6 +40,7 @@ function App() {
         <Route path="/opd-claim" element={<OPDClaim/>} />
         <Route path="/cancer-insurance" element={<CancerInsurance/>} />
         <Route path="/insurance-claim-portal" element={<InsuranceClaimPortal/>} />
+        <Route path="/arogya-sanjeevini" element={<ArogyaSanjeevini/>} />
       </Routes>
     </Router>
   );
