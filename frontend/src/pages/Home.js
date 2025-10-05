@@ -183,7 +183,7 @@ const Home = () => {
           </div>
         </div>
 
-        <div className="category">
+        <div className="category" onClick={() => navigate('/opd-claim')}>
           <div className="card-box">
             <div className="label">OPD</div>
             <div className="icon-container">
