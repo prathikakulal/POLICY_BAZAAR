@@ -16,6 +16,19 @@ const InsuranceClaimPortal = () => {
     claimAmount: ''
   });
 
+  const [familyHealthForm, setFamilyHealthForm] = useState({
+    policyNumber: '',
+    provider: '',
+    primaryMemberName: '',
+    familyMembersCount: '',
+    treatmentDate: '',
+    hospitalName: '',
+    patientName: '',
+    relationToPrimary: '',
+    serviceType: '',
+    claimAmount: ''
+  });
+
   const [lifeForm, setLifeForm] = useState({
     policyNumber: '',
     policyholderName: '',
@@ -68,6 +81,10 @@ const InsuranceClaimPortal = () => {
     {
       question: "What is the maximum time limit to file a claim?",
       answer: "Most insurance policies require claims to be filed within 30-90 days from the date of incident or discovery."
+    },
+    {
+      question: "What is covered under family health insurance?",
+      answer: "Family health insurance typically covers hospitalization, OPD treatments, maternity benefits, and critical illnesses for all family members under a single policy."
     }
   ];
 
@@ -79,6 +96,23 @@ const InsuranceClaimPortal = () => {
       provider: '',
       treatmentDate: '',
       hospitalName: '',
+      serviceType: '',
+      claimAmount: ''
+    });
+  };
+
+  const handleFamilyHealthSubmit = (e) => {
+    e.preventDefault();
+    alert('Family Health insurance claim submitted successfully!');
+    setFamilyHealthForm({
+      policyNumber: '',
+      provider: '',
+      primaryMemberName: '',
+      familyMembersCount: '',
+      treatmentDate: '',
+      hospitalName: '',
+      patientName: '',
+      relationToPrimary: '',
       serviceType: '',
       claimAmount: ''
     });
@@ -669,14 +703,14 @@ const InsuranceClaimPortal = () => {
             <div className="logo-text">ClaimEase</div>
           </div>
           
-          <nav className="nav">
+          {/* <nav className="nav">
             <a href="#home" className="nav-link">Home</a>
             <a href="#claim" className="nav-link">Claim</a>
             <a href="#faq" className="nav-link">FAQ</a>
             <a href="#contact" className="nav-link">Contact</a>
-          </nav>
+          </nav> */}
           
-          <button className="login-btn">Login / Register</button>
+          {/* <button className="login-btn">Login / Register</button> */}
         </div>
       </header>
 
@@ -704,6 +738,7 @@ const InsuranceClaimPortal = () => {
           <div className="insurance-grid">
             {[
               { type: 'health', label: 'Health / OPD Insurance', icon: '🏥' },
+              { type: 'family-health', label: 'Family Health Insurance', icon: '👨‍👩‍👧‍👦' },
               { type: 'life', label: 'Life Insurance', icon: '🛡️' },
               { type: 'vehicle', label: 'Vehicle Insurance', icon: '🚗' },
               { type: 'travel', label: 'Travel Insurance', icon: '✈️' },
@@ -735,6 +770,12 @@ const InsuranceClaimPortal = () => {
                   <p className="info-text">
                     Health insurance covers hospitalization, OPD treatments, and diagnostic services. 
                     Keep all medical bills and prescriptions ready for faster processing.
+                  </p>
+                )}
+                {selectedInsurance === 'family-health' && (
+                  <p className="info-text">
+                    Family Health insurance covers all family members under a single policy including hospitalization, 
+                    OPD treatments, maternity benefits, and critical illnesses. Ensure you have documents for the specific family member.
                   </p>
                 )}
                 {selectedInsurance === 'life' && (
@@ -863,6 +904,164 @@ const InsuranceClaimPortal = () => {
                     className="submit-btn"
                   >
                     Submit Health Claim
+                  </button>
+                </form>
+              )}
+
+              {/* Family Health Insurance Form */}
+              {selectedInsurance === 'family-health' && (
+                <form onSubmit={handleFamilyHealthSubmit} className="form">
+                  <h3 className="form-title">Family Health Insurance Claim</h3>
+                  
+                  <div className="form-grid">
+                    <div className="form-group">
+                      <label className="form-label">Policy Number *</label>
+                      <input
+                        type="text"
+                        required
+                        value={familyHealthForm.policyNumber}
+                        onChange={(e) => setFamilyHealthForm({...familyHealthForm, policyNumber: e.target.value})}
+                        className="form-input"
+                        placeholder="Enter family policy number"
+                      />
+                    </div>
+                    
+                    <div className="form-group">
+                      <label className="form-label">Insurance Provider *</label>
+                      <select
+                        required
+                        value={familyHealthForm.provider}
+                        onChange={(e) => setFamilyHealthForm({...familyHealthForm, provider: e.target.value})}
+                        className="form-select"
+                      >
+                        <option value="">Select Provider</option>
+                        <option value="provider1">Provider 1</option>
+                        <option value="provider2">Provider 2</option>
+                        <option value="provider3">Provider 3</option>
+                      </select>
+                    </div>
+                    
+                    <div className="form-group">
+                      <label className="form-label">Primary Member Name *</label>
+                      <input
+                        type="text"
+                        required
+                        value={familyHealthForm.primaryMemberName}
+                        onChange={(e) => setFamilyHealthForm({...familyHealthForm, primaryMemberName: e.target.value})}
+                        className="form-input"
+                        placeholder="Enter primary member name"
+                      />
+                    </div>
+                    
+                    <div className="form-group">
+                      <label className="form-label">Total Family Members</label>
+                      <input
+                        type="number"
+                        value={familyHealthForm.familyMembersCount}
+                        onChange={(e) => setFamilyHealthForm({...familyHealthForm, familyMembersCount: e.target.value})}
+                        className="form-input"
+                        placeholder="Number of family members covered"
+                      />
+                    </div>
+                    
+                    <div className="form-group">
+                      <label className="form-label">Date of Treatment *</label>
+                      <input
+                        type="date"
+                        required
+                        value={familyHealthForm.treatmentDate}
+                        onChange={(e) => setFamilyHealthForm({...familyHealthForm, treatmentDate: e.target.value})}
+                        className="form-input"
+                      />
+                    </div>
+                    
+                    <div className="form-group">
+                      <label className="form-label">Hospital/Clinic Name *</label>
+                      <input
+                        type="text"
+                        required
+                        value={familyHealthForm.hospitalName}
+                        onChange={(e) => setFamilyHealthForm({...familyHealthForm, hospitalName: e.target.value})}
+                        className="form-input"
+                        placeholder="Enter hospital name"
+                      />
+                    </div>
+                    
+                    <div className="form-group">
+                      <label className="form-label">Patient Name *</label>
+                      <input
+                        type="text"
+                        required
+                        value={familyHealthForm.patientName}
+                        onChange={(e) => setFamilyHealthForm({...familyHealthForm, patientName: e.target.value})}
+                        className="form-input"
+                        placeholder="Enter patient name"
+                      />
+                    </div>
+                    
+                    <div className="form-group">
+                      <label className="form-label">Relation to Primary Member *</label>
+                      <select
+                        required
+                        value={familyHealthForm.relationToPrimary}
+                        onChange={(e) => setFamilyHealthForm({...familyHealthForm, relationToPrimary: e.target.value})}
+                        className="form-select"
+                      >
+                        <option value="">Select Relation</option>
+                        <option value="spouse">Spouse</option>
+                        <option value="child">Child</option>
+                        <option value="parent">Parent</option>
+                        <option value="sibling">Sibling</option>
+                        <option value="other">Other</option>
+                      </select>
+                    </div>
+                    
+                    <div className="form-group">
+                      <label className="form-label">Type of Service *</label>
+                      <select
+                        required
+                        value={familyHealthForm.serviceType}
+                        onChange={(e) => setFamilyHealthForm({...familyHealthForm, serviceType: e.target.value})}
+                        className="form-select"
+                      >
+                        <option value="">Select Service</option>
+                        <option value="consultation">Consultation</option>
+                        <option value="diagnostic">Diagnostic</option>
+                        <option value="pharmacy">Pharmacy</option>
+                        <option value="surgery">Surgery</option>
+                        <option value="maternity">Maternity</option>
+                        <option value="dental">Dental</option>
+                      </select>
+                    </div>
+                    
+                    <div className="form-group">
+                      <label className="form-label">Claim Amount (₹) *</label>
+                      <input
+                        type="number"
+                        required
+                        value={familyHealthForm.claimAmount}
+                        onChange={(e) => setFamilyHealthForm({...familyHealthForm, claimAmount: e.target.value})}
+                        className="form-input"
+                        placeholder="Enter amount"
+                      />
+                    </div>
+                  </div>
+                  
+                  <div className="form-group">
+                    <label className="form-label">Upload Medical Bills & Prescriptions</label>
+                    <input
+                      type="file"
+                      className="form-file"
+                      multiple
+                    />
+                    <p className="file-note">Upload JPEG, PNG or PDF files (Max 10MB). Include patient ID proof if required.</p>
+                  </div>
+                  
+                  <button
+                    type="submit"
+                    className="submit-btn"
+                  >
+                    Submit Family Health Claim
                   </button>
                 </form>
               )}
