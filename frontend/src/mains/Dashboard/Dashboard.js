@@ -80,6 +80,10 @@ const ApolloHomepage = () => {
   navigate('/book'); // ✅ Navigate to BookAppointment page
 };
 
+  const handlemedicineclick = () => {
+    navigate('/buy-medicine');
+  };
+
   const prevHeroSlide = () => {
     setCurrentHeroSlide((prev) => (prev - 1 + heroSlides.length) % heroSlides.length);
   };
@@ -98,8 +102,8 @@ const ApolloHomepage = () => {
       <header className="header">
         <div className="logo">Apollo 24|7</div>
         <nav className="nav-links">
-          <a href="#">Buy Medicines</a>
-          <a href="#">Find Doctors</a>
+          <a href="#" onClick={handlemedicineclick}>Buy Medicines</a>
+          <a href="#"  onClick={handleDoctorClick}>Find Doctors</a>
           <a href="#">Lab Tests</a>
           <a href="#">Circle Membership</a>
           <a href="#">Health Records</a>
@@ -141,7 +145,7 @@ const ApolloHomepage = () => {
 
       {/* Service Cards Section */}
       <section className="service-cards">
-        <div className="card card-medicine">
+        <div className="card card-medicine" onClick={handlemedicineclick}>
           <div className="card-icon" >💊</div>
           <h3>Buy Medicines & Essentials</h3>
           <p>2HRS DELIVERY</p>
