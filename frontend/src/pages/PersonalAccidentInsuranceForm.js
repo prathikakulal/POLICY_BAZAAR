@@ -3490,7 +3490,7 @@ const insurancePlans = [
 const LeftPanel = () => (
     <div className="left-panel">
         <h1>Personal Accident Insurance</h1>
-        <p>Personal Accident Insurance provides complete financial protection to the insured against uncertainties, such as accidental death.… <span className="read-more">Read More</span></p>
+        <p>Personal Accident Insurance provides complete financial protection to the insured against uncertainties, such as accidental death. <span className="read-more"></span></p>
         <div className="features">
             <div className="feature-item">
                 <span className="feature-icon">⏱</span>
@@ -3522,7 +3522,7 @@ const LeftPanel = () => (
             </div>
         </div>
         <div className="trust-info-card">
-              <strong>People trust Policybazaar*</strong>
+              <strong>People trust CuraSure*</strong>
               <div className="trust-stats">
                 <div>
                     <div className="stars">★★★★☆</div>
@@ -3539,7 +3539,7 @@ const LeftPanel = () => (
                 </div>
               </div>
         </div>
-        <p className="footer-text">Policybazaar is one of India's leading digital insurance platform</p>
+        <p className="footer-text">CuraSure is one of India's leading digital insurance platform</p>
     </div>
 );
 
@@ -3555,7 +3555,7 @@ const MemberSelection = ({ formData, setFormData, nextStep }) => {
 
     return (
         <div className="form-step">
-            <h2>Save Big with 0% GST &amp; upto 25% Discount**</h2>
+            <h2>Save Big : upto 25% Discount</h2>
             <div className="gender-selector">
                 <label>
                     <input

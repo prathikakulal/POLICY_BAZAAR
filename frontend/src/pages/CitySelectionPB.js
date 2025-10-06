@@ -79,7 +79,7 @@ const CitySelectionPB = () => {
       {/* Footer */}
       <div className="pb-footer">
         <p className="pb-footer-text">
-          Policybazaar is one of India's leading digital insurance platform
+          CuraSure is one of India's leading digital insurance platform
         </p>
         
         <div className="pb-rating">

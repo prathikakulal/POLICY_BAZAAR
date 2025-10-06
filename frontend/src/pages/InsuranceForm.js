@@ -885,7 +885,7 @@ const InsuranceComparisonPage = ({ onPlanSelect }) => {
         <aside className="sidebar">
           <button className="call-button">Get a call from an Expert</button>
           <div className="sidebar-card">
-            <h4>Why Policybazaar?</h4>
+            <h4>Why CuraSure?</h4>
             <p>Free dedicated claim assistance for your family.</p>
           </div>
           <div className="sidebar-card">

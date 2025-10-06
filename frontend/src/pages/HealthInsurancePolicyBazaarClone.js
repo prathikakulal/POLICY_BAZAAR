@@ -307,7 +307,7 @@ const PlansListingPage = ({ onBack }) => {
 
                 <section className="plans-list-container">
                     <div className="why-pb-banner">
-                        <p>Why Policybazaar is the preferred choice for <strong>55 Lakh+</strong> people like you</p>
+                        <p>Why CureSure is the preferred choice for <strong>55 Lakh+</strong> people like you</p>
                     </div>
                     {plans.slice(0, visibleCount).map(plan => (
                         <div key={plan.id} className="listing-plan-card">

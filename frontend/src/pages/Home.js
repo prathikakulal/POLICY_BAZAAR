@@ -77,7 +77,7 @@ const Home = () => {
 
       {/* Top Navigation Bar */}
       <div className="top-nav">
-        <div className="logo">policybazaar</div>
+        <div className="logo">CuraSure</div>
         <div className="nav-links">
           <span className="nav-item">Insurance Products <span className="checkmark">✔</span></span>
           <span className="nav-item">Renew Your Policy <span className="checkmark">✔</span></span>
