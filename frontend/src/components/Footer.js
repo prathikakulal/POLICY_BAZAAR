@@ -44,8 +44,8 @@ const Footer = () => {
       {/* Middle Section */}
       <div className="footer-middle-section">
         <ul className="company-info">
-          <li>Policybazaar Insurance Brokers Private Limited CIN U74999HR2014PTC050454 Registered Office - Plot No.119, Sector -44, Gurugram - 122001, Haryana Tel no. : 0124-4218302 Email ID: enquiry@policybazaar.com</li>
-          <li>Policybazaar is registered as a Composite Broker | Registration No. 742, Registration Code No. IRDAI 03 797/19, Valid till 09/06/2027, License category: Composite Broker</li>
+          <li>CuraSure Insurance Brokers Private Limited CIN U74999HR2014PTC050454 Registered Office - Plot No.119, Sector -44, Gurugram - 122001, Haryana Tel no. : 0124-4218302 Email ID: enquiry@policybazaar.com</li>
+          <li>CuraSure is registered as a Composite Broker | Registration No. 742, Registration Code No. IRDAI 03 797/19, Valid till 09/06/2027, License category: Composite Broker</li>
           <li>Visitors are hereby informed that their information submitted on the website may be shared with insurers. Product information is authentic and solely based on the information received from the insurers.</li>
         </ul>
 
@@ -57,7 +57,7 @@ const Footer = () => {
 
       {/* Bottom Section */}
       <div className="footer-bottom-section">
-        <p>© Copyright 2008-2025 policybazaar.com. All Rights Reserved.</p>
+        <p>© Copyright 2008-2025 CuraSure.com. All Rights Reserved.</p>
       </div>
     </footer>
   );

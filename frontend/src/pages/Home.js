@@ -29,7 +29,7 @@ const Home = () => {
   const slides = [
     {
       title: "Term Life Insurance",
-      amount: "₹11 Crore",
+      amount: "₹1 Crore",
       price: "starting @ ₹485*/month"
     },
     {
@@ -79,11 +79,11 @@ const Home = () => {
       <div className="top-nav">
         <div className="logo">CuraSure</div>
         <div className="nav-links">
-          <span className="nav-item">Insurance Products <span className="checkmark">✔</span></span>
-          <span className="nav-item">Renew Your Policy <span className="checkmark">✔</span></span>
-          <span className="nav-item" onClick={() => navigate('/insurance-claim-portal')}>Claim <span className="checkmark">✔</span></span>
-          <span className="nav-item">Support <span className="checkmark">✔</span></span>
-          <span className="nav-item" onClick={() => navigate('/dashboard')}>Talk to Expert</span>
+          {/* <span className="nav-item">Insurance Products <span className="checkmark"></span></span> */}
+          {/* <span className="nav-item">Renew Your Policy <span className="checkmark"></span></span> */}
+          <span className="nav-item" onClick={() => navigate('/insurance-claim-portal')}>Claim <span className="checkmark"></span></span>
+          <span className="nav-item">Support <span className="checkmark"></span></span>
+          <span className="nav-item" onClick={() => navigate('/dashboard')}>Cura 24 | 7</span>
           <button className="sign-in-btn" onClick={handleSignInClick}>Sign in</button>
         </div>
       </div>

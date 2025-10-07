@@ -1120,9 +1120,9 @@ const PlanDetailsPage = ({ plan, onBack }) => {
             </div>
 
             <div className="policybazaar-advantage">
-              <h4>Policybazaar Advantage</h4>
+              <h4>CuraSure Advantage</h4>
               <div className="advantage-item">✅ 100% GENUINE CLAIMS ASSURANCE</div>
-              <div className="advantage-item">✅ Policybazaar Lowest Price Guarantee</div>
+              <div className="advantage-item">✅ CuraSure Lowest Price Guarantee</div>
               <div className="advantage-item">✅ Free Dedicated Claim Support</div>
             </div>
 

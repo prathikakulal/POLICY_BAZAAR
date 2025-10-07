@@ -53,7 +53,7 @@ const FeatureSection = () => {
         {/* Main Heading */}
         <div className="heading-section">
           <h1 className="main-heading">
-            Why Policybazaar is the preferred choice for <span className="highlight">55 Lakh+ people like you</span>
+            Why CuraSure is the preferred choice for <span className="highlight">Thousand+ people like you</span>
           </h1>
         </div>
 

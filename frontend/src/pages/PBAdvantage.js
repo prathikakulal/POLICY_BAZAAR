@@ -38,7 +38,7 @@ const PBAdvantage = () => {
 
   return (
     <div className="pb-advantage">
-      <h2 className="pb-title">PB Advantage</h2>
+      <h2 className="pb-title">CS Advantage</h2>
       <div className="pb-underline"></div>
       <p className="pb-description">
         When you buy insurance from us, you get more than just financial safety.

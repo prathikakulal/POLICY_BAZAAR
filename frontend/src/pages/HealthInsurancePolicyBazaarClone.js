@@ -307,7 +307,7 @@ const PlansListingPage = ({ onBack }) => {
 
                 <section className="plans-list-container">
                     <div className="why-pb-banner">
-                        <p>Why CureSure is the preferred choice for <strong>55 Lakh+</strong> people like you</p>
+                        <p>Why CuraSure is the preferred choice for <strong>55 Lakh+</strong> people like you</p>
                     </div>
                     {plans.slice(0, visibleCount).map(plan => (
                         <div key={plan.id} className="listing-plan-card">
@@ -338,7 +338,7 @@ const PlansListingPage = ({ onBack }) => {
                 </section>
             </main>
             <footer className="plans-footer">
-                <p>Disclaimer: Policybazaar does not rate, endorse or recommend any particular insurer or insurance product offered by an insurer. All savings are provided by the insurer as per the IRDAI approved insurance plan. Standard T&C Apply.</p>
+                <p>Disclaimer: CuraSure does not rate, endorse or recommend any particular insurer or insurance product offered by an insurer. All savings are provided by the insurer as per the IRDAI approved insurance plan. Standard T&C Apply.</p>
             </footer>
         </div>
     );

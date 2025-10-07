@@ -24,7 +24,7 @@ const ApolloHomepage = () => {
       bgGradient: "linear-gradient(135deg, #1a2a6c, #b21f1f, #fdbb2d)"
     },
     {
-      title: "Beat Diabetes with Apollo",
+      title: "Beat Diabetes with Cura",
       subtitle: "Start your journey to better health today",
       cta: "Start Now",
       bgGradient: "linear-gradient(135deg, #0f9b0f, #1a2a6c)"
@@ -100,14 +100,14 @@ const ApolloHomepage = () => {
     <div className="apollo-homepage">
       {/* Header Section */}
       <header className="header">
-        <div className="logo">Apollo 24|7</div>
+        <div className="logo">Cura 24|7</div>
         <nav className="nav-links">
           <a href="#" onClick={handlemedicineclick}>Buy Medicines</a>
           <a href="#"  onClick={handleDoctorClick}>Find Doctors</a>
           <a href="#">Lab Tests</a>
-          <a href="#">Circle Membership</a>
+          {/* <a href="#">Circle Membership</a>
           <a href="#">Health Records</a>
-          <a href="#">Diabetes Reversal</a>
+          <a href="#">Diabetes Reversal</a> */}
           <a href="#">Buy Insurance</a>
         </nav>
         <button className="login-btn">
@@ -175,7 +175,7 @@ const ApolloHomepage = () => {
         <div className="ask-content">
           <h2>Ask anything about your health.</h2>
           <p>Get trusted answers directly from Apollo.</p>
-          <button className="ask-btn">Ask Apollo[beta]</button>
+          <button className="ask-btn">Cura</button>
         </div>
       </section>
       <InsuranceInfo/>

@@ -6,7 +6,7 @@ const WhyChooseUs = () => {
     <section className="why-choose-us">
       <div className="left-section">
         <h2>
-          What makes <span className="highlight">Policybazaar</span> one of <br />
+          What makes <span className="highlight">CuraSure</span> one of <br />
           <span className="highlight">India's favourite places</span> to <br />
           <span className="highlight">buy insurance</span>?
         </h2>
@@ -15,8 +15,8 @@ const WhyChooseUs = () => {
       <div className="right-section">
         <div className="info-card purple">
           <div className="emoji">🎉</div>
-          <h3>Over 9 million</h3>
-          <p>customers trust us & have bought their insurance on Policybazaar</p>
+          <h3>Over thousands</h3>
+          <p>customers trust us & have bought their insurance on CuraSure</p>
         </div>
 
         <div className="info-card blue">
